@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en" class="container h-full scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Portfolio</title>
+</head>
+<body class="w-full h-full body pr-6 pl-6">
+    <div class="w-full flex flex-col justify-between min-h-full">
+        <div class="w-full min-h-16 text-white flex flex-row items-center justify-between">
+            <h1 onclick="location.reload()" class="text-2xl cursor-pointer font-semibold">Anshuman.</h1>
+            <div class="w-1/4 flex flex-row items-center justify-between">
+                <a onclick="location.reload()" href="#" class="text-lg font-medium nav-text duration-300">Home</a>
+                <a href="#AboutMe" class="text-lg font-medium nav-text duration-300">About</a>
+                <a href="#Services" class="text-lg font-medium nav-text duration-300">Services</a>
+                <a href="#Projects" class="text-lg font-medium nav-text duration-300">Projects</a>
+            </div>
+        </div> 
+        <div class="w-full lg:gap-0 gap-3 min-h-3/5 flex lg:flex-row items-center flex-col-reverse">
+            <div class="lg:w-1/2 w-full min-h-full text-white flex flex-col justify-center">
+                <h1 class="text-6xl font-bold">Hi, I'm Anshuman Pandey</h1>
+                <h3 class="job text-3xl font-bold">Frontend Developer</h3>
+                <p class="text-base mt-5 mx-0 mb-10">I'm a passionate and creative front-end developer with a strong foundation in programming. I thrive on crafting engaging and user-friendly web experiences through my expertise in HTML, CSS, JavaScript, and more. Let's bring your digital vision to life!</p>
+                <div class="w-6/12 h-12 flex justify-between">
+                    <a class="mya w-2/5 tracking-wider h-full border-2 border-solid text-lg flex justify-center items-center rounded-lg text-black font-semibold" href="images/AnshumanPandey_Resume.pdf" download>Hire Me</a>
+                    <a class="myab bg-transparent w-2/5 tracking-wider h-full border-2 border-solid text-lg flex justify-center items-center rounded-lg font-semibold" href="#Contact">Let's Talk</a>
+                </div>
+            </div>
+            <div class="lg:w-1/2 w-full min-h-full flex items-center lg:justify-end justify-center">
+                <img class="rounded-full w-2/5 h-2/5" src="https://i.postimg.cc/YSx1bCjv/outside.jpg" alt="">
+                <!-- width:300 height:300 -->
+            </div>
+        </div> 
+        <div class="flex flex-row items-center justify-between min-w-44 max-w-44 linkbox">
+            <a class="inline-flex justify-center items-center text-3xl w-10 h-10 links border-2 border-solid rounded-full" target="_blank" href="https://www.instagram.com/anshumanpandey.ap/"><i class='bx bxl-instagram'></i></a>
+            <a class="inline-flex justify-center items-center text-3xl w-10 h-10 links border-2 border-solid rounded-full" target="_blank" href="https://github.com/Ninja23482828484848"><i class='bx bxl-github'></i></a>
+            <a class="inline-flex justify-center items-center text-3xl w-10 h-10 links border-2 border-solid rounded-full" target="_blank" href="https://www.linkedin.com/in/anshumanpandey182005/"><i class="bx bxl-linkedin"></i></a>
+        </div>
+    </div>
+    <div id="AboutMe" class="flex sm:flex-row flex-col min-h-full w-full py-7">
+        <img src="https://i.postimg.cc/YSx1bCjv/outside.jpg" class="w-1/4 max-h-full sm:self-auto self-center rounded-md" alt="">
+        <div class="w-full min-h-full px-7 py-1.5">
+            <h1 class="text-white text-6xl font-bold">About Me</h1><br>
+            <p class="text-white">
+                I was born in the vibrant city of New Delhi and am currently a dedicated student at Maharaja Surajmal Institute. With a strong passion for frontend development, I've honed my skills in HTML, CSS, JavaScript, Bootstrap, Tailwind, jQuery, and even dabbled in Node.js and MongoDB. Beyond web development, I have intermediate proficiency in C++ and C, along with a budding interest in Python and PHP. I'm on a continuous journey of learning and creating, bringing creativity to life through code.</p><br>
+            <div class="flex mt-5 mx-0 mb-10">
+                <button class="text-white slide slide-active font-medium relative mr-12 text-lg" onclick="opentab('skills')">Skills</button>
+                <button class="text-white slide font-medium relative mr-12 text-lg" onclick="opentab('experience')">Experience</button>
+                <button class="text-white slide font-medium relative mr-12 text-lg" onclick="opentab('education')">Education</button>
+            </div>
+            <div id="skills" class="text-white active-tab tab-contents -translate-y-6 w-96">
+                <ul class="flex justify-between">
+                    <ul>
+                        <li class="my-2.5"><span>HTML</span><br>Intermediate</li>
+                        <li class="my-2.5"><span>CSS</span><br>Intermediate</li>
+                        <li class="my-2.5"><span>JAVASCRIPT</span><br>Intermediate</li>
+                        <li class="my-2.5"><span>BOOTSTRAP</span><br>Intermediate</li>
+                        <li class="my-2.5"><span>TAILWIND</span><br>Intermediate</li>
+                        <li class="my-2.5"><span>JQUERY</span><br>Intermediate</li>
+                    </ul>
+                    <ul>
+                        <li class="my-2.5"><span>NODEJS</span><br>Beginner</li>
+                        <li class="my-2.5"><span>MONGODB</span><br>Beginner</li>
+                    </ul>
+                </ul>
+            </div>
+            <div id="experience" class="text-white tab-contents -translate-y-6">
+                <ul>
+                    <li class="my-2.5"><span>Web Development</span><br>1 -2 Years</li>
+                    <li class="my-2.5"><span>Programming</span><br>More Than 2 Years</li>
+                </ul>
+            </div>
+            <div id="education" class="text-white tab-contents -translate-y-6">
+                <ul>
+                    <li class="my-2.5"><span>Bachelor of Computer Applications (BCA)</span><br>
+                    Maharaja Surajmal Institute<br>
+                    2022 - 2025<br></li>
+                    <li class="my-2.5"><span>Senior Secondary (XII), Science</span><br>
+                    Kamal Model Sr. Sec. School<br>
+                    (CBSE Board)<br>
+                    Year Of Completion: 2022<br>
+                    Percentage: 82.80%<br></li>
+                    <li class="my-2.5"><span>Secondary (X)</span><br>
+                    Kamal Model Sr. Sec. School<br>
+                    (CBSE Board)<br>
+                    Year Of Completion: 2020<br>
+                    Percentage: 81.20%</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="Services" class="py-7">
+        <h1 class="text-white text-6xl font-bold">My Services</h1>
+        <div class="mt-28 services-flex flex sm:flex-row flex-col justify-between text-white">
+            <div class="services p-10 rounded duration-500 hover:-translate-y-2.5 flex-1 mr-10">
+                <i class="fa-solid fa-code text-5xl mb-7 text-white"></i>
+                <div>
+                    <h1 class="text-3xl font-medium mb-3.5">Web Design</h1>
+                    <p>With 2 years of experience in web design, I am proficient in HTML, CSS, JavaScript, Bootstrap, Tailwind, jQuery, Node.js, and MongoDB. I craft engaging and responsive digital experiences.</p>
+                    <a class="mt-5 inline-block" href="">Learn More</a>
+                </div>
+            </div>
+            <div class="services p-10 rounded duration-500 hover:-translate-y-2.5 flex-1">
+                <i class="fa-solid fa-laptop text-5xl mb-7 text-white"></i>
+                <div>
+                    <h1 class="text-3xl font-medium mb-3.5">Programming</h1>
+                    <p>I possess 2 years of programming expertise with a strong foundation in C++, C, and intermediate-level proficiency in Python. I'm also exploring PHP at a beginner's level.</p>
+                    <a class="mt-5 inline-block" href="">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="Projects" class="w-full py-7">
+            <h1 class="text-white text-6xl font-bold">My Work</h1>
+            <div id="parent-projects" class="mt-7 min-h-96 gap-2.5 w-full flex sm:flex-row flex-col justify-between">
+                <div class="w-full relative my-work overflow-hidden rounded-md">
+                    <img class="w-full h-full duration-500" src="https://i.postimg.cc/CLjWNrQg/calculator.png" alt="">
+                    <div class="w-full layer duration-500 h-0 rounded-md text-center overflow-hidden py-0 px-10 flex flex-col items-center justify-center absolute bottom-0 left-0 z-10 text-white">
+                        <h3 class="font-medium text-lg mb-5">Calculator</h3>
+                        <p>Explore my sleek online calculator: crafted with HTML, CSS,
+                            JS, jQuery, and Bootstrap. Effortlessly handle diverse
+                            calculations through its user-friendly interface. Simplify
+                            complexity stylishly</p>
+                        <a class="leading-10 mt-5 w-16 h-16 bg-white flex justify-center items-center rounded-full text-black text-lg" target="_blank" href="https://github.com/Ninja23482828484848/Calculator-Project-Web-Development"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="w-full relative my-work overflow-hidden rounded-md">
+                    <img class="w-full h-full duration-500" src="https://i.postimg.cc/R0rJBFTf/weather.png" alt="">
+                    <div class="w-full layer duration-500 h-0 rounded-md text-center overflow-hidden py-0 px-10 flex flex-col items-center justify-center absolute bottom-0 left-0 z-10 text-white">
+                        <h3 class="font-medium text-lg mb-5">Weather App</h3>
+                        <p>Discover my weather app, built using HTML, CSS, JS, jQuery,
+                            Bootstrap, and API integration. Seamlessly track weather
+                            conditions with a user-friendly interface. Your go-to tool for
+                            accurate weather updates.</p>
+                        <a class="leading-10 mt-5 w-16 h-16 bg-white flex justify-center items-center rounded-full text-black text-lg" target="_blank" href="https://github.com/Ninja23482828484848/Weather-App-Web-Development"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="w-full relative my-work overflow-hidden rounded-md">
+                    <img class="w-full h-full duration-500" src="https://i.postimg.cc/L88N1ydv/todolist.png" alt="">
+                    <div class="w-full layer duration-500 h-0 rounded-md text-center overflow-hidden py-0 px-10 flex flex-col items-center justify-center absolute bottom-0 left-0 z-10 text-white">
+                        <h3 class="font-medium text-lg mb-5">To Do List</h3>
+                        <p>Experience my To-Do List app: crafted using HTML, CSS, JS,
+                            jQuery, and Bootstrap. Organize tasks effortlessly with this
+                            intuitive, stylish, and responsive tool. Your ultimate companion
+                            for efficient task management.</p>
+                        <a class="leading-10 mt-5 w-16 h-16 bg-white flex justify-center items-center rounded-full text-black text-lg" target="_blank" href="https://github.com/Ninja23482828484848/To-Do-List-Project-Web-Development"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <div id="parent-projects" class="extra hidden mt-7 min-h-96 gap-2.5 w-full flex sm:flex-row flex-col justify-between">
+            <div class="w-full relative my-work overflow-hidden rounded-md">
+                <img class="w-full h-full duration-500" src="https://i.postimg.cc/CLjWNrQg/calculator.png" alt="">
+                <div class="w-full layer duration-500 h-0 rounded-md text-center overflow-hidden py-0 px-10 flex flex-col items-center justify-center absolute bottom-0 left-0 z-10 text-white">
+                    <h3 class="font-medium text-lg mb-5">Calculator</h3>
+                    <p>Explore my sleek online calculator: crafted with HTML, CSS,
+                        JS, jQuery, and Bootstrap. Effortlessly handle diverse
+                        calculations through its user-friendly interface. Simplify
+                        complexity stylishly</p>
+                    <a class="leading-10 mt-5 w-16 h-16 bg-white flex justify-center items-center rounded-full text-black text-lg" target="_blank" href="https://github.com/Ninja23482828484848/Calculator-Project-Web-Development"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="w-full relative my-work overflow-hidden rounded-md">
+                <img class="w-full h-full duration-500" src="https://i.postimg.cc/R0rJBFTf/weather.png" alt="">
+                <div class="w-full layer duration-500 h-0 rounded-md text-center overflow-hidden py-0 px-10 flex flex-col items-center justify-center absolute bottom-0 left-0 z-10 text-white">
+                    <h3 class="font-medium text-lg mb-5">Weather App</h3>
+                    <p>Discover my weather app, built using HTML, CSS, JS, jQuery,
+                        Bootstrap, and API integration. Seamlessly track weather
+                        conditions with a user-friendly interface. Your go-to tool for
+                        accurate weather updates.</p>
+                    <a class="leading-10 mt-5 w-16 h-16 bg-white flex justify-center items-center rounded-full text-black text-lg" target="_blank" href="https://github.com/Ninja23482828484848/Weather-App-Web-Development"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="w-full relative my-work overflow-hidden rounded-md">
+                <img class="w-full h-full duration-500" src="https://i.postimg.cc/L88N1ydv/todolist.png" alt="">
+                <div class="w-full layer duration-500 h-0 rounded-md text-center overflow-hidden py-0 px-10 flex flex-col items-center justify-center absolute bottom-0 left-0 z-10 text-white">
+                    <h3 class="font-medium text-lg mb-5">To Do List</h3>
+                    <p>Experience my To-Do List app: crafted using HTML, CSS, JS,
+                        jQuery, and Bootstrap. Organize tasks effortlessly with this
+                        intuitive, stylish, and responsive tool. Your ultimate companion
+                        for efficient task management.</p>
+                    <a class="leading-10 mt-5 w-16 h-16 bg-white flex justify-center items-center rounded-full text-black text-lg" target="_blank" href="https://github.com/Ninja23482828484848/To-Do-List-Project-Web-Development"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+    </div>
+    <a onclick="see_more()" class="see-more cursor-pointer duration-300 hover:text-black rounded-md py-3.5 px-12 block mx-auto w-fit border border-solid">See More</a>   
+    <div id="Contact" class="w-full py-7">
+            <h1 class="text-white text-6xl font-bold">Let's Talk</h1><br>
+            <form name="submit-to-google-sheet" class="w-full">
+                <div class="flex items-center">
+                    <div class="w-full">
+                        <input autocomplete="off" class="bg-gray-700 text-lg focus:outline focus:outline-2 text-white rounded w-full p-4 my-4 mx-0" id="inline-full-name" type="text" name="Name" placeholder="Your Name">
+                    </div>
+                </div>
+                <div class="flex items-center">
+                    <div class="w-full">
+                        <input class="bg-gray-700 text-lg focus:outline focus:outline-2 text-white rounded w-full p-4 my-4 mx-0" id="inline-password" type="password" name="Email" placeholder="******************">
+                    </div>
+                </div>
+                <div class="flex items-center">
+                    <div class="w-full">
+                        <textarea id="inline-message" class="resize-none bg-gray-700 text-lg focus:outline focus:outline-2 text-white rounded w-full p-4 my-4 mx-0" rows="6" name="Message" placeholder="Your Message"></textarea>
+                    </div>
+                </div>
+                <button type="submit" class="rounded-md text-lg py-3.5 px-14 mt-5 request">Submit</button>
+                <span id="#msg" class="-mt-2.5 block"></span>
+            </form>
+    </div>
+    <div title="Go To Top" id="btn-back-to-top" class="topup cursor-pointer hidden fixed bottom-10 right-10 w-12 h-12 flex justify-center items-center rounded-full">
+        <i class="topdown text-lg fa-solid fa-chevron-up"></i>
+    </div>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxkjx5wdwmSqYSwhIragYMUn17N21Dw4A0Pahn0LnZ116eSVqzkhRXjPsZRnvbuvTDEsg/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => console.log('Success!', response))
+            .catch(error => {
+                console.error('Error:', error)
+            })
+        })
+    </script>
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/9ccf900fad.js" crossorigin="anonymous"></script>
+</body>
+</html>
