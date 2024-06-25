@@ -1,14 +1,14 @@
-<!DOCTYPE html>
 <html lang="en" class="container h-full scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://cdn.tailwindcss.com"></script>
     <title>Portfolio</title>
 </head>
-<body class="w-full h-full body pr-6 pl-6">
+<body class="w-full h-full body overflow-x-hidden pr-6 pl-6">
     <div class="w-full flex flex-col justify-between min-h-full">
         <div class="w-full min-h-16 text-white flex flex-row items-center justify-between">
             <h1 onclick="location.reload()" class="text-2xl cursor-pointer font-semibold">Anshuman.</h1>
@@ -25,7 +25,7 @@
                 <h3 class="job text-3xl font-bold">Frontend Developer</h3>
                 <p class="text-base mt-5 mx-0 mb-10">I'm a passionate and creative front-end developer with a strong foundation in programming. I thrive on crafting engaging and user-friendly web experiences through my expertise in HTML, CSS, JavaScript, and more. Let's bring your digital vision to life!</p>
                 <div class="w-6/12 h-12 flex justify-between">
-                    <a class="mya w-2/5 tracking-wider h-full border-2 border-solid text-lg flex justify-center items-center rounded-lg text-black font-semibold" href="images/AnshumanPandey_Resume.pdf" download>Hire Me</a>
+                    <a class="mya w-2/5 tracking-wider h-full border-2 border-solid text-lg flex justify-center items-center rounded-lg text-black font-semibold" target="_blank" href="https://drive.google.com/file/d/1_vtwZ33hpAZwN0vbCRV45ZJdSjv8X2FD/view?usp=sharing">Hire Me</a>
                     <a class="myab bg-transparent w-2/5 tracking-wider h-full border-2 border-solid text-lg flex justify-center items-center rounded-lg font-semibold" href="#Contact">Let's Talk</a>
                 </div>
             </div>
@@ -36,11 +36,15 @@
         </div> 
         <div class="flex flex-row items-center justify-between min-w-44 max-w-44 linkbox">
             <a class="inline-flex justify-center items-center text-3xl w-10 h-10 links border-2 border-solid rounded-full" target="_blank" href="https://www.instagram.com/anshumanpandey.ap/"><i class='bx bxl-instagram'></i></a>
-            <a class="inline-flex justify-center items-center text-3xl w-10 h-10 links border-2 border-solid rounded-full" target="_blank" href="https://github.com/Ninja23482828484848"><i class='bx bxl-github'></i></a>
+            <a class="inline-flex justify-center items-center text-3xl w-10 h-10 links border-2 border-solid rounded-full" target="_blank" href="https://github.com/anshuman182005"><i class='bx bxl-github'></i></a>
             <a class="inline-flex justify-center items-center text-3xl w-10 h-10 links border-2 border-solid rounded-full" target="_blank" href="https://www.linkedin.com/in/anshumanpandey182005/"><i class="bx bxl-linkedin"></i></a>
         </div>
     </div>
-    <div id="AboutMe" class="flex sm:flex-row flex-col min-h-full w-full py-7">
+    <div id="AboutMe" class="flex sm:flex-row flex-col w-full min-h-full py-7">
+        <!-- <div class="sm:w-1/4 w-2/5 flex sm:flex-col flex-row gap-2.5 max-h-full">
+          <img class="rounded-md max-w-full h-full" src="https://i.postimg.cc/YSx1bCjv/outside.jpg">
+          <img class="rounded-md max-w-full h-full" src="https://i.postimg.cc/vmN6F2Ns/event-college.jpg">
+        </div> -->
         <img src="https://i.postimg.cc/YSx1bCjv/outside.jpg" class="w-1/4 max-h-full sm:self-auto self-center rounded-md" alt="">
         <div class="w-full min-h-full px-7 py-1.5">
             <h1 class="text-white text-6xl font-bold">About Me</h1><br>
@@ -51,7 +55,7 @@
                 <button class="text-white slide font-medium relative mr-12 text-lg" onclick="opentab('experience')">Experience</button>
                 <button class="text-white slide font-medium relative mr-12 text-lg" onclick="opentab('education')">Education</button>
             </div>
-            <div id="skills" class="text-white active-tab tab-contents -translate-y-6 w-96">
+            <div id="skills" class="text-white active-tab tab-contents -translate-y-6 w-80">
                 <ul class="flex justify-between">
                     <ul>
                         <li class="my-2.5"><span>HTML</span><br>Intermediate</li>
@@ -100,7 +104,7 @@
                 <div>
                     <h1 class="text-3xl font-medium mb-3.5">Web Design</h1>
                     <p>With 2 years of experience in web design, I am proficient in HTML, CSS, JavaScript, Bootstrap, Tailwind, jQuery, Node.js, and MongoDB. I craft engaging and responsive digital experiences.</p>
-                    <a class="mt-5 inline-block" href="">Learn More</a>
+                    <a class="mt-5 inline-block" target="_blank" href="https://github.com/anshuman182005?tab=repositories">Learn More</a>
                 </div>
             </div>
             <div class="services p-10 rounded duration-500 hover:-translate-y-2.5 flex-1">
@@ -108,7 +112,7 @@
                 <div>
                     <h1 class="text-3xl font-medium mb-3.5">Programming</h1>
                     <p>I possess 2 years of programming expertise with a strong foundation in C++, C, and intermediate-level proficiency in Python. I'm also exploring PHP at a beginner's level.</p>
-                    <a class="mt-5 inline-block" href="">Learn More</a>
+                    <a class="mt-5 inline-block" target="_blank" href="https://github.com/anshuman182005?tab=repositories">Learn More</a>
                 </div>
             </div>
         </div>
@@ -150,43 +154,43 @@
                     </div>
                 </div>
             </div>
+            <div id="parent-projects" class="extra hidden mt-7 min-h-96 gap-2.5 w-full flex sm:flex-row flex-col justify-between">
+                <div class="w-full relative my-work overflow-hidden rounded-md">
+                    <img class="w-full h-full duration-500" src="https://i.postimg.cc/CLjWNrQg/calculator.png" alt="">
+                    <div class="w-full layer duration-500 h-0 rounded-md text-center overflow-hidden py-0 px-10 flex flex-col items-center justify-center absolute bottom-0 left-0 z-10 text-white">
+                        <h3 class="font-medium text-lg mb-5">Calculator</h3>
+                        <p>Explore my sleek online calculator: crafted with HTML, CSS,
+                            JS, jQuery, and Bootstrap. Effortlessly handle diverse
+                            calculations through its user-friendly interface. Simplify
+                            complexity stylishly</p>
+                        <a class="leading-10 mt-5 w-16 h-16 bg-white flex justify-center items-center rounded-full text-black text-lg" target="_blank" href="https://github.com/Ninja23482828484848/Calculator-Project-Web-Development"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="w-full relative my-work overflow-hidden rounded-md">
+                    <img class="w-full h-full duration-500" src="https://i.postimg.cc/R0rJBFTf/weather.png" alt="">
+                    <div class="w-full layer duration-500 h-0 rounded-md text-center overflow-hidden py-0 px-10 flex flex-col items-center justify-center absolute bottom-0 left-0 z-10 text-white">
+                        <h3 class="font-medium text-lg mb-5">Weather App</h3>
+                        <p>Discover my weather app, built using HTML, CSS, JS, jQuery,
+                            Bootstrap, and API integration. Seamlessly track weather
+                            conditions with a user-friendly interface. Your go-to tool for
+                            accurate weather updates.</p>
+                        <a class="leading-10 mt-5 w-16 h-16 bg-white flex justify-center items-center rounded-full text-black text-lg" target="_blank" href="https://github.com/Ninja23482828484848/Weather-App-Web-Development"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="w-full relative my-work overflow-hidden rounded-md">
+                    <img class="w-full h-full duration-500" src="https://i.postimg.cc/L88N1ydv/todolist.png" alt="">
+                    <div class="w-full layer duration-500 h-0 rounded-md text-center overflow-hidden py-0 px-10 flex flex-col items-center justify-center absolute bottom-0 left-0 z-10 text-white">
+                        <h3 class="font-medium text-lg mb-5">To Do List</h3>
+                        <p>Experience my To-Do List app: crafted using HTML, CSS, JS,
+                            jQuery, and Bootstrap. Organize tasks effortlessly with this
+                            intuitive, stylish, and responsive tool. Your ultimate companion
+                            for efficient task management.</p>
+                        <a class="leading-10 mt-5 w-16 h-16 bg-white flex justify-center items-center rounded-full text-black text-lg" target="_blank" href="https://github.com/Ninja23482828484848/To-Do-List-Project-Web-Development"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
     </div>
-    <div id="parent-projects" class="extra hidden mt-7 min-h-96 gap-2.5 w-full flex sm:flex-row flex-col justify-between">
-            <div class="w-full relative my-work overflow-hidden rounded-md">
-                <img class="w-full h-full duration-500" src="https://i.postimg.cc/CLjWNrQg/calculator.png" alt="">
-                <div class="w-full layer duration-500 h-0 rounded-md text-center overflow-hidden py-0 px-10 flex flex-col items-center justify-center absolute bottom-0 left-0 z-10 text-white">
-                    <h3 class="font-medium text-lg mb-5">Calculator</h3>
-                    <p>Explore my sleek online calculator: crafted with HTML, CSS,
-                        JS, jQuery, and Bootstrap. Effortlessly handle diverse
-                        calculations through its user-friendly interface. Simplify
-                        complexity stylishly</p>
-                    <a class="leading-10 mt-5 w-16 h-16 bg-white flex justify-center items-center rounded-full text-black text-lg" target="_blank" href="https://github.com/Ninja23482828484848/Calculator-Project-Web-Development"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                </div>
-            </div>
-            <div class="w-full relative my-work overflow-hidden rounded-md">
-                <img class="w-full h-full duration-500" src="https://i.postimg.cc/R0rJBFTf/weather.png" alt="">
-                <div class="w-full layer duration-500 h-0 rounded-md text-center overflow-hidden py-0 px-10 flex flex-col items-center justify-center absolute bottom-0 left-0 z-10 text-white">
-                    <h3 class="font-medium text-lg mb-5">Weather App</h3>
-                    <p>Discover my weather app, built using HTML, CSS, JS, jQuery,
-                        Bootstrap, and API integration. Seamlessly track weather
-                        conditions with a user-friendly interface. Your go-to tool for
-                        accurate weather updates.</p>
-                    <a class="leading-10 mt-5 w-16 h-16 bg-white flex justify-center items-center rounded-full text-black text-lg" target="_blank" href="https://github.com/Ninja23482828484848/Weather-App-Web-Development"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                </div>
-            </div>
-            <div class="w-full relative my-work overflow-hidden rounded-md">
-                <img class="w-full h-full duration-500" src="https://i.postimg.cc/L88N1ydv/todolist.png" alt="">
-                <div class="w-full layer duration-500 h-0 rounded-md text-center overflow-hidden py-0 px-10 flex flex-col items-center justify-center absolute bottom-0 left-0 z-10 text-white">
-                    <h3 class="font-medium text-lg mb-5">To Do List</h3>
-                    <p>Experience my To-Do List app: crafted using HTML, CSS, JS,
-                        jQuery, and Bootstrap. Organize tasks effortlessly with this
-                        intuitive, stylish, and responsive tool. Your ultimate companion
-                        for efficient task management.</p>
-                    <a class="leading-10 mt-5 w-16 h-16 bg-white flex justify-center items-center rounded-full text-black text-lg" target="_blank" href="https://github.com/Ninja23482828484848/To-Do-List-Project-Web-Development"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                </div>
-            </div>
-    </div>
-    <a onclick="see_more()" class="see-more cursor-pointer duration-300 hover:text-black rounded-md py-3.5 px-12 block mx-auto w-fit border border-solid">See More</a>   
+    <a onclick="see_more()" class="see-more cursor-pointer duration-300 hover:text-black rounded-md py-3.5 px-12 block mx-auto w-fit border border-solid">See More</a>    
     <div id="Contact" class="w-full py-7">
             <h1 class="text-white text-6xl font-bold">Let's Talk</h1><br>
             <form name="submit-to-google-sheet" class="w-full">
@@ -225,7 +229,6 @@
             })
         })
     </script>
-    <script src="https://cdn.tailwindcss.com"></script>
     <script src="script.js"></script>
     <script src="https://kit.fontawesome.com/9ccf900fad.js" crossorigin="anonymous"></script>
 </body>
